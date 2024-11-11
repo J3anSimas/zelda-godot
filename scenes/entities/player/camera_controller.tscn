@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh666ahc0hgtn"]
+
+[ext_resource type="Script" path="res://scenes/entities/player/camera_controller.gd" id="1_docna"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bm1wk"]
+
+[node name="CameraController" type="SpringArm3D"]
+shape = SubResource("SphereShape3D_bm1wk")
+spring_length = 6.5
+script = ExtResource("1_docna")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
